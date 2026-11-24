@@ -16,7 +16,7 @@ thead, tr, th, td {
   vertical-align: baseline;
 }
 
-#papertitle
+.papertitle
 {
 	color: #1772d0;
 	padding: 0px;
@@ -28,7 +28,7 @@ thead, tr, th, td {
 body {
   position: relative;
   margin: 3em auto 2em auto;
-  width: 1024px;
+  max-width: 1024px;
   font-size: 16px;
 	line-height:20px;
 }
@@ -261,6 +261,103 @@ div.papermeta pre {
 
 .gif {
   display: inline-block;
-  width: 480*0.3px;
-  height: 270*0.3px;
+  max-width: 100%;
+}
+
+iframe, img {
+  max-width: 100%;
+}
+
+table.intro td {
+  vertical-align: top;
+}
+
+td.bio {
+  width: 620px;
+}
+
+td.photo {
+  padding-left: 40px;
+  width: 360px;
+  text-align: right;
+}
+
+table.teaching {
+  margin: 0 15px;
+}
+
+.new {
+  color: red;
+}
+
+.equal {
+  margin: 0.5em 1em 0;
+  color: #555;
+}
+
+.paperlinks a {
+  margin-right: 0.7em;
+}
+
+hr.yearline {
+  width: 220px;
+  margin-left: 0;
+}
+
+div.paper p {
+  overflow: hidden;
+}
+
+div.paper {
+  overflow: hidden;
+  padding-bottom: 0.6em;
+}
+
+pre.bib {
+  clear: both;
+  overflow-x: auto;
+  padding: 1em;
+  margin-top: 0.8em;
+  background: #f6f6f6;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin-top: 1.5em;
+  }
+
+  div.section, div.credits {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  table.intro, table.intro tbody, table.intro tr, td.bio, td.photo {
+    display: block;
+    width: auto;
+  }
+
+  td.photo {
+    padding: 1em 0 0;
+    text-align: left;
+  }
+
+  div.paper, div.project, div.course {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  div.papermeta {
+    margin-left: 0;
+  }
+
+  img.paper, img.haptics, img.prosthesis, img.imece {
+    float: none;
+    display: block;
+    margin: 0 0 0.6em;
+  }
+
+  img.paper {
+    width: 100%;
+    max-width: 320px;
+  }
 }
