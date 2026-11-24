@@ -1,14 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ruturaj Sambhus - Home</title>
   <meta name="description" content="Ruturaj Sambhus, PhD candidate at Virginia Tech. Nonlinear model predictive control of legged robots: loco-manipulation, cooperative transportation and shared autonomy.">
   <link rel="canonical" href="https://ruturajsambhusvt.github.io/">
-  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Ruturaj Sambhus - Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css?v=3">
+
   <script type="text/javascript" src="js/hidebib.js"></script>
+
+  <script>
+    function showContent() {
+      document.getElementById("content").style.display = "block";
+    }
+  </script>
+
 </head>
 
 <body>
@@ -20,8 +30,8 @@
 
   <div class="section">
     <table class="intro">
-      <tr>
-        <td class="bio">
+      <tr valign="top">
+        <td style="width: 620px; vertical-align: top;">
           I am a PhD candidate in Mechanical Engineering at Virginia Tech, in the <a href="https://arcol.me.vt.edu/">ARCOL
             Lab</a> (Agile Robots for Control, Optimization, and Learning), advised by <a
             href="https://me.vt.edu/people/faculty/akbarihamed-kaveh.html">Dr. Kaveh Akbari Hamed</a>. My research is on
@@ -41,7 +51,7 @@
           <p><br></p>
           Prior to joining Virginia Tech, I was working full-time as a Project Research Associate (Jan'20-Oct'20) and
           Junior Research Fellow
-          (Jan'21-Aug'21) at <a href="https://www.iitb.ac.in/">Indian Institute of Technology, Bombay</a>, India, in
+          (Jan'21-Jul'21) at <a href="https://www.iitb.ac.in/">Indian Institute of Technology, Bombay</a>, India, in
           the Robotics Lab on control of haptic virtual interfaces and prosthetic devices with <a
             href="https://www.me.iitb.ac.in/?q=faculty/Prof.%20Abhishek%20Gupta"> Dr. Abhishek Gupta</a>.
           I previously graduated from Indian Institute of
@@ -56,16 +66,17 @@
               href="https://scholar.google.com/citations?user=VjqhRxAAAAAJ&hl=en">google scholar</a> | <a
               href="https://www.linkedin.com/in/ruturaj-sambhus-763534a2/"> linkedin </a>
           </p>
-          <pre id="email" style="font-size: 12px">
+          <pre xml:space="preserve" id="email" style="font-size: 12px">
 
 ruturajsambhus AT vt.edu
   </pre>
-          <script>
+          <script xml:space="preserve" language="JavaScript">
             hideblock('email');
           </script>
         </td>
 
-        <td class="photo"><img src="my_website.jpg" alt="Ruturaj Sambhus" height="250"></td>
+        <td width="400"><img src="my_website.jpg" alt="My picture" height=250 align="right" /></td>
+        <!-- <td width="400"><img src="mi_image.jpeg" alt="My picture" height=250 align="right" /></td> -->
       </tr>
     </table>
   </div>
@@ -74,131 +85,243 @@ ruturajsambhus AT vt.edu
 
 
   <div class="section">
-    <h2> Publications</h2>
-    <p class="equal">* Equal contribution</p>
-    <div class="year_heading" data-selected="y"><br>2026
-      <hr class="yearline">
+    <h2> Publications (<a href="javascript:showselected()" id="select">selected</a> | <a href="javascript:showall()"
+        id="unselect">all</a>) </h2><br>
+    <div class="year_heading" data-selected="n"><br>2026
+      <hr width="220px" align="left">
     </div>
+    <!--------------------------------------------------------------------------->
     <div class="paper" id="ral26locomanip" data-selected="y">
-      <img class="paper" src="figures/ral26_locomanip.jpg" alt="Go2 quadruped with a Kinova arm opening a refrigerator">
-      <p><strong class="new">[New]</strong> <b class="papertitle">A Nonlinear MPC Framework for Loco-Manipulation of Quadrupedal Robots With Non-Negligible Manipulator Dynamics</b><br>
-        <strong>Ruturaj S. Sambhus*</strong>, Kapi Ketan Mehta*, Ali MirMohammad Sadeghi*, Basit Muhammad Imran, Jeeseop Kim, Taizoon Chunawala, Vittorio Pastore, Sujith Vijayan, Kaveh Akbari Hamed<br>
-        IEEE Robotics and Automation Letters, vol. 11, no. 4, pp. 4050&ndash;4057, 2026<br>
-        <span class="paperlinks"><a href="https://ruturajsambhusvt.github.io/RAL_locomanip/">project page</a> <a href="https://doi.org/10.1109/LRA.2026.3664229">paper</a> <a href="https://arxiv.org/abs/2507.22042">arXiv</a> <a href="https://github.com/HDSRL/Locomanipulation_NMPC_Go2_Kinova">code</a> <a href="https://youtu.be/2zjDdqY5aF8">video</a> <a href="javascript:toggleblock('ral26locomanipBib')">bibtex</a></span>
-      </p>
-      <pre class="bib" id="ral26locomanipBib" style="display: none">@article{sambhus2026nmpc,
-  title         = {A Nonlinear {MPC} Framework for Loco-Manipulation of Quadrupedal Robots With Non-Negligible Manipulator Dynamics},
-  author        = {Sambhus, Ruturaj S. and Mehta, Kapi Ketan and Sadeghi, Ali MirMohammad and Imran, Basit Muhammad and Kim, Jeeseop and Chunawala, Taizoon and Pastore, Vittorio and Vijayan, Sujith and Akbari Hamed, Kaveh},
-  journal       = {IEEE Robotics and Automation Letters},
-  volume        = {11},
-  number        = {4},
-  pages         = {4050--4057},
-  year          = {2026},
-  doi           = {10.1109/LRA.2026.3664229}
-}</pre>
-    </div>
 
-    <div class="paper" id="ral26admm" data-selected="y">
-      <img class="paper" src="figures/ral26_admm.jpg" alt="Two quadrupeds carrying a shared payload past obstacles">
-      <p><strong class="new">[New]</strong> <b class="papertitle">ADMM-Based Safety-Critical Distributed NMPC for Cooperative Transportation by Quadrupedal Robots</b><br>
-        <strong>Ruturaj S. Sambhus</strong>, Kapi Ketan Mehta, Yicheng Zeng, Kaveh Akbari Hamed<br>
-        Accepted, IEEE Robotics and Automation Letters, 2026<br>
-        <span class="paperlinks"><a href="https://arxiv.org/abs/2607.17007">arXiv</a> <a href="https://youtu.be/w8hg52T8Luc">video</a> <a href="javascript:toggleblock('ral26admmBib')">bibtex</a></span>
-      </p>
-      <pre class="bib" id="ral26admmBib" style="display: none">@article{sambhus2026admm,
-  title         = {{ADMM}-Based Safety-Critical Distributed {NMPC} for Cooperative Transportation by Quadrupedal Robots},
-  author        = {Sambhus, Ruturaj S. and Mehta, Kapi Ketan and Zeng, Yicheng and Akbari Hamed, Kaveh},
-  journal       = {IEEE Robotics and Automation Letters},
-  year          = {2026},
-  note          = {Accepted. arXiv:2607.17007}
-}</pre>
-    </div>
+      <p> <strong style="color:red">[New]</strong> <b id="papertitle">A Nonlinear MPC Framework for Loco-Manipulation of Quadrupedal Robots With Non-Negligible Manipulator Dynamics</b> <br />
+        <strong>Ruturaj S. Sambhus*,</strong> Kapi Ketan Mehta*, Ali MirMohammad Sadeghi*, Basit Muhammad Imran, Jeeseop Kim, Taizoon Chunawala, Vittorio Pastore, Sujith Vijayan, Kaveh Akbari Hamed <br />
+        IEEE Robotics and Automation Letters (RA-L), vol. 11, no. 4, pp. 4050&ndash;4057, 2026 <br />
 
+        <a href="https://ruturajsambhusvt.github.io/RAL_locomanip/">project page </a> &nbsp;
+        <a href="https://doi.org/10.1109/LRA.2026.3664229">paper </a> &nbsp;
+        <a href="https://arxiv.org/pdf/2507.22042">pdf </a> &nbsp;
+        <a href="https://github.com/HDSRL/Locomanipulation_NMPC_Go2_Kinova">code </a> &nbsp;
+        <a href="https://youtu.be/2zjDdqY5aF8">video </a> &nbsp;
+        <a href="javascript:toggleblock('ral26locomanipBib')">bibtex </a>
+      </p>
+
+      <div class="gif"> <img src="figures/ral26_locomanip.jpg" alt="Go2 with a Kinova arm walking over wooden blocks and being pushed" height="170" />
+
+      </div>
+
+      <div class="papermeta" id="ral26locomanipMeta">
+        <pre xml:space="preserve" id="ral26locomanipBib">
+
+@article{sambhus2026nmpc,
+  title={A Nonlinear {MPC} Framework for Loco-Manipulation of Quadrupedal Robots With Non-Negligible Manipulator Dynamics},
+  author={Sambhus, Ruturaj S. and Mehta, Kapi Ketan and Sadeghi, Ali MirMohammad and Imran, Basit Muhammad and Kim, Jeeseop and Chunawala, Taizoon and Pastore, Vittorio and Vijayan, Sujith and Akbari Hamed, Kaveh},
+  journal={IEEE Robotics and Automation Letters},
+  volume={11},
+  number={4},
+  pages={4050--4057},
+  year={2026},
+  doi={10.1109/LRA.2026.3664229}
+}</pre>
+        <script language="javascript" type="text/javascript" xml:space="preserve">
+          hideblock('ral26locomanipBib');
+        </script>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------->
     <div class="paper" id="cdc26payload" data-selected="y">
-      <img class="paper" src="figures/cdc26_payload.jpg" alt="Time-lapse of two quadrupeds carrying a payload around obstacles">
-      <p><strong class="new">[New]</strong> <b class="papertitle">Safety-Critical Centralized Nonlinear MPC for Cooperative Payload Transportation by Two Quadrupedal Robots</b><br>
-        <strong>Ruturaj S. Sambhus</strong>, Yicheng Zeng, Kapi Ketan Mehta, Jeeseop Kim, Kaveh Akbari Hamed<br>
-        Accepted, 65th IEEE Conference on Decision and Control (CDC), 2026<br>
-        <span class="paperlinks"><a href="https://arxiv.org/abs/2604.03200">arXiv</a> <a href="https://youtu.be/tsVo09eszCo">video</a> <a href="javascript:toggleblock('cdc26payloadBib')">bibtex</a></span>
-      </p>
-      <pre class="bib" id="cdc26payloadBib" style="display: none">@inproceedings{sambhus2026centralized,
-  title         = {Safety-Critical Centralized Nonlinear {MPC} for Cooperative Payload Transportation by Two Quadrupedal Robots},
-  author        = {Sambhus, Ruturaj S. and Zeng, Yicheng and Mehta, Kapi Ketan and Kim, Jeeseop and Akbari Hamed, Kaveh},
-  booktitle     = {65th IEEE Conference on Decision and Control (CDC)},
-  year          = {2026},
-  note          = {Accepted. arXiv:2604.03200}
-}</pre>
-    </div>
 
+      <p> <strong style="color:red">[New]</strong> <b id="papertitle">Safety-Critical Centralized Nonlinear MPC for Cooperative Payload Transportation by Two Quadrupedal Robots</b> <br />
+        <strong>Ruturaj S. Sambhus,</strong> Yicheng Zeng, Kapi Ketan Mehta, Jeeseop Kim, Kaveh Akbari Hamed <br />
+        Accepted, 65th IEEE Conference on Decision and Control (CDC), 2026 <br />
+
+        <a href="https://arxiv.org/pdf/2604.03200">pdf </a> &nbsp;
+        <a href="https://youtu.be/tsVo09eszCo">video </a> &nbsp;
+        <a href="javascript:toggleblock('cdc26payloadBib')">bibtex </a>
+      </p>
+
+      <div class="gif"> <img src="figures/cdc26_payload.jpg" alt="Time-lapse of two quadrupeds carrying a payload around obstacles" height="170" />
+
+      </div>
+
+      <div class="papermeta" id="cdc26payloadMeta">
+        <pre xml:space="preserve" id="cdc26payloadBib">
+
+@inproceedings{sambhus2026centralized,
+  title={Safety-Critical Centralized Nonlinear {MPC} for Cooperative Payload Transportation by Two Quadrupedal Robots},
+  author={Sambhus, Ruturaj S. and Zeng, Yicheng and Mehta, Kapi Ketan and Kim, Jeeseop and Akbari Hamed, Kaveh},
+  booktitle={65th IEEE Conference on Decision and Control (CDC)},
+  year={2026},
+  note={Accepted. arXiv:2604.03200}
+}</pre>
+        <script language="javascript" type="text/javascript" xml:space="preserve">
+          hideblock('cdc26payloadBib');
+        </script>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------->
+    <div class="paper" id="ral26admm" data-selected="y">
+
+      <p> <strong style="color:red">[New]</strong> <b id="papertitle">ADMM-Based Safety-Critical Distributed NMPC for Cooperative Transportation by Quadrupedal Robots</b> <br />
+        <strong>Ruturaj S. Sambhus,</strong> Kapi Ketan Mehta, Yicheng Zeng, Kaveh Akbari Hamed <br />
+        Accepted, IEEE Robotics and Automation Letters (RA-L), 2026 <br />
+
+        <a href="https://arxiv.org/pdf/2607.17007">pdf </a> &nbsp;
+        <a href="https://youtu.be/w8hg52T8Luc">video </a> &nbsp;
+        <a href="javascript:toggleblock('ral26admmBib')">bibtex </a>
+      </p>
+
+      <div class="gif"> <img src="figures/ral26_admm.jpg" alt="Teams of three and two quadrupeds carrying a shared payload" height="170" />
+
+      </div>
+
+      <div class="papermeta" id="ral26admmMeta">
+        <pre xml:space="preserve" id="ral26admmBib">
+
+@article{sambhus2026admm,
+  title={{ADMM}-Based Safety-Critical Distributed {NMPC} for Cooperative Transportation by Quadrupedal Robots},
+  author={Sambhus, Ruturaj S. and Mehta, Kapi Ketan and Zeng, Yicheng and Akbari Hamed, Kaveh},
+  journal={IEEE Robotics and Automation Letters},
+  year={2026},
+  note={Accepted. arXiv:2607.17007}
+}</pre>
+        <script language="javascript" type="text/javascript" xml:space="preserve">
+          hideblock('ral26admmBib');
+        </script>
+      </div>
+    </div>
+    <div class="year_heading" data-selected="n"><br>2025
+      <hr width="220px" align="left">
+    </div>
+    <!--------------------------------------------------------------------------->
     <div class="paper" id="teleopanmpc" data-selected="y">
-      <img class="paper" src="figures/teleop_anmpc.jpg" alt="Go2 moving between obstacles with a human operator">
-      <p><b class="papertitle">Teleoperator-Aware and Safety-Critical Adaptive Nonlinear MPC for Shared Autonomy in Obstacle Avoidance of Legged Robots</b><br>
-        <strong>Ruturaj S. Sambhus</strong>, Muneeb Ahmad, Basit Muhammad Imran, Sujith Vijayan, Dylan P. Losey, Kaveh Akbari Hamed<br>
-        Work in progress<br>
-        <span class="paperlinks"><a href="https://arxiv.org/abs/2509.22815">arXiv</a> <a href="javascript:toggleblock('teleopanmpcBib')">bibtex</a></span>
-      </p>
-      <pre class="bib" id="teleopanmpcBib" style="display: none">@misc{sambhus2025teleoperator,
-  title         = {Teleoperator-Aware and Safety-Critical Adaptive Nonlinear {MPC} for Shared Autonomy in Obstacle Avoidance of Legged Robots},
-  author        = {Sambhus, Ruturaj and Ahmad, Muneeb and Imran, Basit Muhammad and Vijayan, Sujith and Losey, Dylan P. and Akbari Hamed, Kaveh},
-  year          = {2025},
-  eprint        = {2509.22815},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.RO}
-}</pre>
-    </div>
 
-    <div class="paper" id="admmcbf26" data-selected="y">
-      <p><b class="papertitle">ADMM-Based Distributed MPC with Control Barrier Functions for Safe Multi-Robot Quadrupedal Locomotion</b><br>
-        Yicheng Zeng, <strong>Ruturaj S. Sambhus</strong>, Basit Muhammad Imran, Jeeseop Kim, Vittorio Pastore, Kaveh Akbari Hamed<br>
-        arXiv preprint, 2026<br>
-        <span class="paperlinks"><a href="https://arxiv.org/abs/2603.19170">arXiv</a> <a href="javascript:toggleblock('admmcbf26Bib')">bibtex</a></span>
-      </p>
-      <pre class="bib" id="admmcbf26Bib" style="display: none">@misc{zeng2026admm,
-  title         = {{ADMM}-Based Distributed {MPC} with Control Barrier Functions for Safe Multi-Robot Quadrupedal Locomotion},
-  author        = {Zeng, Yicheng and Sambhus, Ruturaj S. and Imran, Basit Muhammad and Kim, Jeeseop and Pastore, Vittorio and Akbari Hamed, Kaveh},
-  year          = {2026},
-  eprint        = {2603.19170},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.RO}
-}</pre>
-    </div>
+      <p> <b id="papertitle">Teleoperator-Aware and Safety-Critical Adaptive Nonlinear MPC for Shared Autonomy in Obstacle Avoidance of Legged Robots</b> <br />
+        <strong>Ruturaj S. Sambhus,</strong> Muneeb Ahmad, Basit Muhammad Imran, Sujith Vijayan, Dylan P. Losey, Kaveh Akbari Hamed <br />
+        Work in progress <br />
 
-    <div class="year_heading" data-selected="y"><br>2023
-      <hr class="yearline">
+        <a href="https://arxiv.org/pdf/2509.22815">pdf </a> &nbsp;
+        <a href="javascript:toggleblock('teleopanmpcBib')">bibtex </a>
+      </p>
+
+      <div class="gif"> <img src="figures/teleop_anmpc.jpg" alt="Go2 moving between obstacles with a human operator" height="170" />
+
+      </div>
+
+      <div class="papermeta" id="teleopanmpcMeta">
+        <pre xml:space="preserve" id="teleopanmpcBib">
+
+@misc{sambhus2025teleoperator,
+  title={Teleoperator-Aware and Safety-Critical Adaptive Nonlinear {MPC} for Shared Autonomy in Obstacle Avoidance of Legged Robots},
+  author={Sambhus, Ruturaj and Ahmad, Muneeb and Imran, Basit Muhammad and Vijayan, Sujith and Losey, Dylan P. and Akbari Hamed, Kaveh},
+  year={2025},
+  eprint={2509.22815},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO}
+}</pre>
+        <script language="javascript" type="text/javascript" xml:space="preserve">
+          hideblock('teleopanmpcBib');
+        </script>
+      </div>
     </div>
+    <!--------------------------------------------------------------------------->
+    <div class="paper" id="admmcbf" data-selected="y">
+
+      <p> <b id="papertitle">ADMM-Based Distributed MPC with Control Barrier Functions for Safe Multi-Robot Quadrupedal Locomotion</b> <br />
+        Yicheng Zeng, <strong>Ruturaj S. Sambhus,</strong> Basit Muhammad Imran, Jeeseop Kim, Vittorio Pastore, Kaveh Akbari Hamed <br />
+        arXiv preprint <br />
+
+        <a href="https://arxiv.org/pdf/2603.19170">pdf </a> &nbsp;
+        <a href="javascript:toggleblock('admmcbfBib')">bibtex </a>
+      </p>
+
+      <div class="papermeta" id="admmcbfMeta">
+        <pre xml:space="preserve" id="admmcbfBib">
+
+@misc{zeng2026admm,
+  title={{ADMM}-Based Distributed {MPC} with Control Barrier Functions for Safe Multi-Robot Quadrupedal Locomotion},
+  author={Zeng, Yicheng and Sambhus, Ruturaj S. and Imran, Basit Muhammad and Kim, Jeeseop and Pastore, Vittorio and Akbari Hamed, Kaveh},
+  year={2026},
+  eprint={2603.19170},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO}
+}</pre>
+        <script language="javascript" type="text/javascript" xml:space="preserve">
+          hideblock('admmcbfBib');
+        </script>
+      </div>
+    </div>
+    <div class="year_heading" data-selected="n"><br>2023
+      <hr width="220px" align="left">
+    </div>
+    <!--------------------------------------------------------------------------->
     <div class="paper" id="iros23drlforcesea" data-selected="y">
-      <p><b class="papertitle">Real-Time Model-Free Deep Reinforcement Learning for Force Control of a Series Elastic Actuator</b><br>
-        <strong>Ruturaj Sambhus*</strong>, Aydin Gokce*, Stephen Welch, Connor W. Herron, Alexander Leonessa<br>
-        IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 5645&ndash;5652, 2023<br>
-        <span class="paperlinks"><a href="https://doi.org/10.1109/IROS55552.2023.10341751">paper</a> <a href="https://arxiv.org/abs/2304.04911">arXiv</a> <a href="javascript:toggleblock('iros23drlforceseaBib')">bibtex</a></span>
-      </p>
-      <div class="gif"><iframe src="https://giphy.com/embed/ACUnOg88XJLxSIsnkP" title="Hardware experiment" width="300" height="169" class="giphy-embed" allowfullscreen></iframe></div>
-      <div class="gif"><iframe src="https://giphy.com/embed/Gng8DKGWwjqVPfIVwh" title="Hardware experiment" width="300" height="169" class="giphy-embed" allowfullscreen></iframe></div>
-      <pre class="bib" id="iros23drlforceseaBib" style="display: none">@inproceedings{sambhus2023realtime,
-  title         = {Real-Time Model-Free Deep Reinforcement Learning for Force Control of a Series Elastic Actuator},
-  author        = {Sambhus, Ruturaj and Gokce, Aydin and Welch, Stephen and Herron, Connor W. and Leonessa, Alexander},
-  booktitle     = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages         = {5645--5652},
-  year          = {2023},
-  doi           = {10.1109/IROS55552.2023.10341751}
-}</pre>
-    </div>
 
+      <p> <b id="papertitle">Real-Time Model-Free Deep Reinforcement Learning for Force Control of a Series Elastic Actuator</b> <br />
+        <strong>Ruturaj Sambhus*,</strong> Aydin Gokce*, Stephen Welch, Connor W. Herron, Alexander Leonessa <br />
+        IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 5645&ndash;5652, 2023 <br />
+
+        <a href="https://doi.org/10.1109/IROS55552.2023.10341751">paper </a> &nbsp;
+        <a href="https://arxiv.org/pdf/2304.04911">pdf </a> &nbsp;
+        <a href="javascript:toggleblock('iros23drlforceseaBib')">bibtex </a>
+      </p>
+
+      <div class="gif"> <iframe src="https://giphy.com/embed/ACUnOg88XJLxSIsnkP" width="480*0.3" height="270*0.3"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+      </div>
+      <div class="gif"> <iframe src="https://giphy.com/embed/Gng8DKGWwjqVPfIVwh" width="480*0.3" height="270*0.3"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+      </div>
+
+      <div class="papermeta" id="iros23drlforceseaMeta">
+        <pre xml:space="preserve" id="iros23drlforceseaBib">
+
+@inproceedings{sambhus2023realtime,
+  title={Real-Time Model-Free Deep Reinforcement Learning for Force Control of a Series Elastic Actuator},
+  author={Sambhus, Ruturaj and Gokce, Aydin and Welch, Stephen and Herron, Connor W. and Leonessa, Alexander},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={5645--5652},
+  year={2023},
+  doi={10.1109/IROS55552.2023.10341751}
+}</pre>
+        <script language="javascript" type="text/javascript" xml:space="preserve">
+          hideblock('iros23drlforceseaBib');
+        </script>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------->
     <div class="paper" id="imece23drlseaposition" data-selected="y">
-      <p><b class="papertitle">Real-World Deep Reinforcement Learning for Position Tracking of a Pendulum Driven by a Series Elastic Actuator</b><br>
-        <strong>Ruturaj Sambhus*</strong>, Aydin Gokce*, Stephen Welch*, Alexander Leonessa<br>
-        ASME International Mechanical Engineering Congress and Exposition (IMECE), IMECE2023-116828, 2023<br>
-        <span class="paperlinks"><a href="https://doi.org/10.1115/IMECE2023-116828">paper</a> <a href="javascript:toggleblock('imece23drlseapositionBib')">bibtex</a></span>
-      </p>
-      <pre class="bib" id="imece23drlseapositionBib" style="display: none">@inproceedings{sambhus2023realworld,
-  title         = {Real-World Deep Reinforcement Learning for Position Tracking of a Pendulum Driven by a Series Elastic Actuator},
-  author        = {Sambhus, Ruturaj and Gokce, Aydin and Welch, Stephen and Leonessa, Alexander},
-  booktitle     = {ASME International Mechanical Engineering Congress and Exposition (IMECE)},
-  year          = {2023},
-  doi           = {10.1115/IMECE2023-116828}
-}</pre>
-    </div>
 
+      <p> <b id="papertitle">Real-World Deep Reinforcement Learning for Position Tracking of a Pendulum Driven by a Series Elastic Actuator</b> <br />
+        <strong>Ruturaj Sambhus*,</strong> Aydin Gokce*, Stephen Welch*, Alexander Leonessa <br />
+        ASME International Mechanical Engineering Congress and Exposition (IMECE), IMECE2023-116828, 2023 <br />
+
+        <a href="https://doi.org/10.1115/IMECE2023-116828">paper </a> &nbsp;
+        <a href="javascript:toggleblock('imece23drlseapositionBib')">bibtex </a>
+      </p>
+
+      <div class="papermeta" id="imece23drlseapositionMeta">
+        <pre xml:space="preserve" id="imece23drlseapositionBib">
+
+@inproceedings{sambhus2023realworld,
+  title={Real-World Deep Reinforcement Learning for Position Tracking of a Pendulum Driven by a Series Elastic Actuator},
+  author={Sambhus, Ruturaj and Gokce, Aydin and Welch, Stephen and Leonessa, Alexander},
+  booktitle={ASME International Mechanical Engineering Congress and Exposition (IMECE)},
+  year={2023},
+  doi={10.1115/IMECE2023-116828}
+}</pre>
+        <script language="javascript" type="text/javascript" xml:space="preserve">
+          hideblock('imece23drlseapositionBib');
+        </script>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------->
+
+    <script language="javascript" type="text/javascript" xml:space="preserve">
+      showall()</script>
+
+    <!--------------------------------------------------------------------------->
   </div>
 
 
@@ -219,19 +342,30 @@ ruturajsambhus AT vt.edu
 
     <div class="project" id="drlseaprojects" data-selected="y">
 
-      <p> <b class="papertitle">Deep Reinforcement Learning (DRL) for Force Control of Series Elastic Actuator</b> <br />
+      <p> <b id="papertitle">Deep Reinforcement Learning (DRL) for Force Control of Series Elastic Actuator</b> <br />
         Terrestrial Robotics Engineering and Controls (TREC) Lab, Virginia Tech, Blacksburg
       </p>
 
 
-      <div class="gif"> <iframe src="https://giphy.com/embed/ACUnOg88XJLxSIsnkP" width="300" height="169"
-          class="giphy-embed" allowFullScreen></iframe>
+      <div class="gif"> <iframe src="https://giphy.com/embed/ACUnOg88XJLxSIsnkP" width="480*0.3" height="270*0.3"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
       </div>
-      <div class="gif"><iframe src="https://giphy.com/embed/Gng8DKGWwjqVPfIVwh" width="300" height="169"
-          class="giphy-embed" allowFullScreen></iframe>
+      <div class="gif"><iframe src="https://giphy.com/embed/Gng8DKGWwjqVPfIVwh" width="480*0.3" height="270*0.3"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
       </div>
+
+      <!-- <ul>
+        <li> <b>Objective:</b> To develop a real-time model-free DRL algorithm for force control of a series elastic
+          actuator (SEA) driving a pendulum. </li>
+        <li> <b>Approach:</b> We use a DRL algorithm to learn the optimal policy for force control of the SEA. The
+          algorithm is model-free and does not require any prior knowledge of the system dynamics. </li>
+        <li> <b>Results:</b> The DRL algorithm is able to learn the optimal policy for force control of the SEA. The
+          algorithm is able to track the desired force trajectory with minimal error. </li>
+
+      </ul> -->
+
 
       <h3>Objective:</h3>
       <p>The objective of the project was to apply deep reinforcement learning (DRL) techniques to develop a force
@@ -241,7 +375,8 @@ ruturajsambhus AT vt.edu
         tracking.</p>
 
       <a href="javascript:toggleblock('forceseaappres')">Details </a>
-      <div id="forceseaappres" style="display: none">
+      <!-- <h4>Approach and Results: -->
+      <div xml:space="preserve" id="forceseaappres" style="display: none">
 
         <h4> Approach and Results:</h4>
 
@@ -279,12 +414,14 @@ ruturajsambhus AT vt.edu
           <li>Ensured stability of the system throughout the learning process, avoiding any instability issues.</li>
         </ul>
       </div>
-      <script>
+      </td>
+      <script language="javascript" type="text/javascript" xml:space="preserve">
         hideblock('forceseaappres');
       </script>
 
       <div class="papermeta" id="drlseacontrolMeta"></div>
 
+      </td>
 
       <p>Overall, the research project focused on applying deep reinforcement learning techniques to address force
         control challenges in a series elastic actuator driving a pendulum system. The integration of DRL with the
@@ -305,17 +442,35 @@ ruturajsambhus AT vt.edu
     </div>
 
     <div class="project" data-selected="y">
-      <p> <b class="papertitle">Deep Reinforcement Learning (DRL) for Real Robotic Arm Control</b> <br />
+
+
+      <p> <b id="papertitle">Deep Reinforcement Learning (DRL) for Real Robotic Arm Control</b> <br />
 
         Terrestrial Robotics Engineering and Controls (TREC) Lab, Virginia Tech, Blacksburg
       </p>
 
 
 
-      <div class="gif"> <iframe src="https://giphy.com/embed/zR6clp5PCishzyeJns" width="300" height="169"
-          class="giphy-embed" allowFullScreen></iframe>
+      <div class="gif"> <iframe src="https://giphy.com/embed/zR6clp5PCishzyeJns" width="480*0.3" height="270*0.3"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
       </div>
+      <!-- <div class="gif"><iframe src="https://giphy.com/embed/Gng8DKGWwjqVPfIVwh" width="480*0.3" height="270*0.3"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <p><a href="https://giphy.com/gifs/Gng8DKGWwjqVPfIVwh">via GIPHY</a></p>
+      </div> -->
+
+      <!-- <ul>
+      <li> <b>Objective:</b> To develop a real-time model-free DRL algorithm for force control of a series elastic
+        actuator (SEA) driving a pendulum. </li>
+      <li> <b>Approach:</b> We use a DRL algorithm to learn the optimal policy for force control of the SEA. The
+        algorithm is model-free and does not require any prior knowledge of the system dynamics. </li>
+      <li> <b>Results:</b> The DRL algorithm is able to learn the optimal policy for force control of the SEA. The
+        algorithm is able to track the desired force trajectory with minimal error. </li>
+
+    </ul> -->
+
+
       <h3>Objective:</h3>
       <p>The objective of the project was to achieve stable hardware learning performance for a 7-degree-of-freedom
         (DOF)
@@ -325,7 +480,8 @@ ruturajsambhus AT vt.edu
         using joint velocities and joint torques as actions respectively.</p>
 
       <a href="javascript:toggleblock('pandarltorvel')">Details </a>
-      <div id="pandarltorvel" style="display: none">
+      <!-- <h4>Approach and Results: -->
+      <div xml:space="preserve" id="pandarltorvel" style="display: none">
 
         <h4> Approach and Results:</h4>
 
@@ -370,12 +526,13 @@ ruturajsambhus AT vt.edu
         </ul>
       </div>
 
-      <script>
+      <script language="javascript" type="text/javascript" xml:space="preserve">
         hideblock('pandarltorvel');
       </script>
 
       <div class="papermeta" id="pandarlcontrolMeta"></div>
 
+      </td>
 
       <p>Overall, the project focused on achieving stable hardware learning performance for a 7-DOF velocity reacher
         task
@@ -401,7 +558,7 @@ ruturajsambhus AT vt.edu
     <div class="project" data-selected="y">
 
 
-      <p> <b class="papertitle"> Model Matching H∞ Optimal Control of Haptic Interfaces for Rendering Multi-User
+      <p> <b id="papertitle"> Model Matching H∞ Optimal Control of Haptic Interfaces for Rendering Multi-User
           Interaction over Shared Virtual
           Spring </b> <br />
 
@@ -420,7 +577,8 @@ ruturajsambhus AT vt.edu
         massless spring using MATLAB/Simulink.</p>
 
       <a href="javascript:toggleblock('hapticmulituser')">Details </a>
-      <div id="hapticmulituser" style="display: none">
+      <!-- <h4>Approach and Results: -->
+      <div xml:space="preserve" id="hapticmulituser" style="display: none">
 
         <h3>Approach:</h3>
         <ul>
@@ -442,11 +600,12 @@ ruturajsambhus AT vt.edu
         </ul>
       </div>
 
-      <script>
+      <script language="javascript" type="text/javascript" xml:space="preserve">
         hideblock('hapticmulituser');
       </script>
 
 
+      </td>
 
       <p>
         In summary, this project focuses on the control of haptic interfaces and presents a Model Matching Approach
@@ -466,7 +625,7 @@ ruturajsambhus AT vt.edu
     <div class="project" data-selected="n">
 
 
-      <p> <b class="papertitle"> A Powered Assistive Device for Below Knee Amputees and Patients with Lower Limb
+      <p> <b id="papertitle"> A Powered Assistive Device for Below Knee Amputees and Patients with Lower Limb
           Muscle Weakness (Prosthesis and Orthosis) </b> <br />
 
         Robotics Lab, Indian Institute of Technology, Bombay, Mumbai, India
@@ -485,7 +644,8 @@ ruturajsambhus AT vt.edu
         timing belt pulleys using MATLAB.</p>
 
       <a href="javascript:toggleblock('prosthesis')">Details </a>
-      <div id="prosthesis" style="display: none">
+      <!-- <h4>Approach and Results: -->
+      <div xml:space="preserve" id="prosthesis" style="display: none">
 
 
 
@@ -515,10 +675,11 @@ ruturajsambhus AT vt.edu
         </ul>
       </div>
 
-      <script>
+      <script language="javascript" type="text/javascript" xml:space="preserve">
         hideblock('prosthesis');
       </script>
 
+      </td>
 
       <p>
         Overall, the project focused on optimizing and analyzing the parameters of SEAs, conducting sensitivity
@@ -539,23 +700,23 @@ ruturajsambhus AT vt.edu
     <div class="project" data-selected="n">
 
 
-      <p> <b class="papertitle"> Modelling, Characterization and Design of Piezoelectric Ultrasonic Transducer </b> <br />
+      <p> <b id="papertitle"> Modelling, Characterization and Design of Piezoelectric Ultrasonic Transducer </b> <br />
 
         Advanced Manufacturing Processes Lab, Indian Institute of Technology, Bombay, Mumbai, India
       </p>
       <div class="gif">
-        <iframe src="https://giphy.com/embed/Hy2BecJ4QYWphmVovu" width="300" height="169"
+        <iframe src="https://giphy.com/embed/Hy2BecJ4QYWphmVovu" width="480*0.5" height="270*0.5" frameBorder="0"
           class="giphy-embed" allowFullScreen></iframe>
 
       </div>
 
       <div class="gif">
-        <iframe src="https://giphy.com/embed/qQSGhNJINyVuqD7d5e" width="300" height="173"
+        <iframe src="https://giphy.com/embed/qQSGhNJINyVuqD7d5e" width="480*0.5" height="276*0.5" frameBorder="0"
           class="giphy-embed" allowFullScreen></iframe>
 
       </div>
       <div class="gif">
-        <iframe src="https://giphy.com/embed/sgMkJsQXi70QnjfVZD" width="300" height="173"
+        <iframe src="https://giphy.com/embed/sgMkJsQXi70QnjfVZD" width="480*0.5" height="276*0.5" frameBorder="0"
           class="giphy-embed" allowFullScreen></iframe>
 
       </div>
@@ -569,7 +730,8 @@ ruturajsambhus AT vt.edu
         representative transducer.</p>
 
       <a href="javascript:toggleblock('piezoultra')">Details </a>
-      <div id="piezoultra" style="display: none">
+      <!-- <h4>Approach and Results: -->
+      <div xml:space="preserve" id="piezoultra" style="display: none">
 
         <h3>Approach:</h3>
         <ul>
@@ -613,11 +775,12 @@ ruturajsambhus AT vt.edu
         </ul>
       </div>
 
-      <script>
+      <script language="javascript" type="text/javascript" xml:space="preserve">
         hideblock('piezoultra');
       </script>
 
 
+      </td>
 
 
       <p>
@@ -635,7 +798,7 @@ ruturajsambhus AT vt.edu
 
     <!--------------------------------------------------------------------------->
 
-    <script>
+    <script language="javascript" type="text/javascript" xml:space="preserve">
       showselected_proj()</script>
   </div>
 
@@ -655,15 +818,15 @@ ruturajsambhus AT vt.edu
 
     <div class="course" id="opencv" data-selected="y">
 
-      <p> <b class="papertitle">Real Time Handwritten Digit Recognition and Hand Tracking Volume Control <a
+      <p> <b id="papertitle">Real Time Handwritten Digit Recognition and Hand Tracking Volume Control <a
             href="https://github.com/ruturajsambhusvt/OpenCV.git" target="_blank"><strong
               style="color:green">(Code)</strong></a></b> <br />
         OpenCV Crash Course, Python, Machine Learning, Computer Vision, Image Processing, Gesture Recognition, Hand
 
       </p>
 
-      <div class="gif"><iframe src="https://giphy.com/embed/C2Wu6BFy462nd8UPud" width="300" height="225"
-          class="giphy-embed" allowFullScreen></iframe>
+      <div class="gif"><iframe src="https://giphy.com/embed/C2Wu6BFy462nd8UPud" width="480*0.5" height="360*0.5"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
       </div>
 
@@ -682,20 +845,20 @@ ruturajsambhus AT vt.edu
 
     <div class="course" id="mpc" data-selected="y">
 
-      <p> <b class="papertitle">Design of MPC for Gait Planning of Unitree A1 Quadrupedal Robot <a
+      <p> <b id="papertitle">Design of MPC for Gait Planning of Unitree A1 Quadrupedal Robot <a
             href="https://github.com/ruturajsambhusvt/MPC_LIP.git" target="_blank"><strong
               style="color:green">(Code)</strong></a></b> <br />
         Model Predictive Control
 
       </p>
 
-      <div class="gif"><iframe src="https://giphy.com/embed/JYE21SwtkRyS4Ov8ch" width="300" height="180"
-          class="giphy-embed" allowFullScreen></iframe>
+      <div class="gif"><iframe src="https://giphy.com/embed/JYE21SwtkRyS4Ov8ch" width="480*0.5" height="288*0.5"
+          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
       </div>
 
       <div class="gif">
-        <iframe src="https://giphy.com/embed/QtUjzGIdMf3JXaZUp9" width="300" height="180"
+        <iframe src="https://giphy.com/embed/QtUjzGIdMf3JXaZUp9" width="480*0.5" height="288*0.5" frameBorder="0"
           class="giphy-embed" allowFullScreen></iframe>
 
       </div>
@@ -717,7 +880,7 @@ ruturajsambhus AT vt.edu
 
     <div class="course" id="deeprla2c" data-selected="y">
 
-      <p> <b class="papertitle">From Scratch Implementation of REINFORCE, A2C for Continuous Control <a
+      <p> <b id="papertitle">From Scratch Implementation of REINFORCE, A2C for Continuous Control <a
             href="https://github.com/ruturajsambhusvt/A2C/tree/bc26e61" target="_blank"><strong
               style="color:green">(Code)</strong></a></b> <br />
         Stochastic Approximation and Applications
@@ -740,7 +903,7 @@ ruturajsambhus AT vt.edu
 
     <div class="course" id="residualrl" data-selected="y">
 
-      <p> <b class="papertitle">Study on Residual Policy Learning and DQN discrete control from pixels</b> <br />
+      <p> <b id="papertitle">Study on Residual Policy Learning and DQN discrete control from pixels</b> <br />
         Deep Reinforcement Learning
 
       </p>
@@ -764,14 +927,14 @@ ruturajsambhus AT vt.edu
 
     <div class="course" id="leggedloco" data-selected="y">
 
-      <p> <b class="papertitle">Hybrid Zero Dynamics
+      <p> <b id="papertitle">Hybrid Zero Dynamics
           based Controller for Design of 2-D Gait for 5-DOF Bipedal robot</b> <br />
         Feedback Control of Dynamic Legged Locomotion
 
       </p>
 
       <div class="gif">
-        <iframe src="https://giphy.com/embed/Uzg35OfTAjcylKyvgC" width="300" height="225"
+        <iframe src="https://giphy.com/embed/Uzg35OfTAjcylKyvgC" width="480*0.5" height="360*0.5" frameBorder="0"
           class="giphy-embed" allowFullScreen></iframe>
 
       </div>
@@ -799,7 +962,7 @@ ruturajsambhus AT vt.edu
 
 
 
-    <script>
+    <script language="javascript" type="text/javascript" xml:space="preserve">
       showselected_course()</script>
   </div>
 
@@ -807,33 +970,53 @@ ruturajsambhus AT vt.edu
 
 
   <!--------------------------------------------------------------------------->
+  <!--- TEMPLAT
+
+-->
   <div class="section">
     <h2> Leadership </h2><br>
+    <!-- <h2> Leadership (<a href="javascript:showselected_proj()" id="select_proj">selected</a> | <a
+      href="javascript:showall_proj()" id="unselect_proj">all</a>) </h2><br> -->
+    <!-- <div class="year_heading_proj" data-selected="n"><br>2023
+    <hr width="220px" align="left">
+  </div> -->
     <!--------------------------------------------------------------------------->
 
 
     <div class="project" id="leadership" data-selected="y">
 
-      <p> <b class="papertitle">Project Manager, Team SHUNYA IIT Bombay for Solar Decathlon China 2018</b> <br />
+      <p> <b id="papertitle">Project Manager, Team SHUNYA IIT Bombay for Solar Decathlon China 2018</b> <br />
         Indian Institute of Technology Bombay, Mumbai, India and Dezhou, Shandong Province, China
       </p>
 
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/zBv2uWToBUM"
-        title="Team SHUNYA IIT Bombay - Project Solarise"
+      <iframe width="480*0.5" height="288*0.5" src="https://www.youtube.com/embed/zBv2uWToBUM"
+        title="Team SHUNYA IIT Bombay - Project Solarise" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
 
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/RM0Dy-98hLY"
-        title="Team Shunya, IITB, India. SOLAR DECATHLON CHINA 2018"
+      <iframe width="480*0.5" height="288*0.5" src="https://www.youtube.com/embed/RM0Dy-98hLY"
+        title="Team Shunya, IITB, India. SOLAR DECATHLON CHINA 2018" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
 
 
-      <iframe src="https://giphy.com/embed/uUCxrN1Iatnoc0s2LH" width="300" height="180"
+      <iframe src="https://giphy.com/embed/uUCxrN1Iatnoc0s2LH" width="480*0.5" height="288*0.5" frameBorder="0"
         class="giphy-embed" allowFullScreen></iframe>
 
 
 
+
+
+
+      <!-- <ul>
+      <li> <b>Objective:</b> To develop a real-time model-free DRL algorithm for force control of a series elastic
+        actuator (SEA) driving a pendulum. </li>
+      <li> <b>Approach:</b> We use a DRL algorithm to learn the optimal policy for force control of the SEA. The
+        algorithm is model-free and does not require any prior knowledge of the system dynamics. </li>
+      <li> <b>Results:</b> The DRL algorithm is able to learn the optimal policy for force control of the SEA. The
+        algorithm is able to track the desired force trajectory with minimal error. </li>
+
+    </ul> -->
 
 
 
@@ -843,7 +1026,8 @@ ruturajsambhus AT vt.edu
         house in 25 days at the competition site in Dezhou, China. Awarded Best Participation.</p>
 
       <a href="javascript:toggleblock('teamshunya')">Details </a>
-      <div id="teamshunya" style="display: none">
+      <!-- <h4>Approach and Results: -->
+      <div xml:space="preserve" id="teamshunya" style="display: none">
 
         <h4>Revived, Led, and Motivated a Talented Team</h4>
         <p>Revived, led, and motivated a team of 65 members of various disciplines to design, construct, and operate a
@@ -877,12 +1061,14 @@ ruturajsambhus AT vt.edu
         </ul>
 
       </div>
-      <script>
+      </td>
+      <script language="javascript" type="text/javascript" xml:space="preserve">
         hideblock('teamshunya');
       </script>
 
       <div class="papermeta" id="leadershipMeta"></div>
 
+      </td>
 
       <p>Overall, Team SHUNYA's remarkable journey showcased our exceptional leadership, innovation, and commitment to
         sustainability. From constructing a Net Positive Energy house to securing corporate sponsorships and inspiring
@@ -894,7 +1080,7 @@ ruturajsambhus AT vt.edu
 
     <!--------------------------------------------------------------------------->
 
-    <script>
+    <script language="javascript" type="text/javascript" xml:space="preserve">
       showselected_proj()</script>
   </div>
 
@@ -910,7 +1096,7 @@ ruturajsambhus AT vt.edu
     <h2> Teaching</h2>
 
     <br>
-    <table class="teaching">
+    <table width="90%" width="90%" align="center" border="0" cellspacing="0" cellpadding="8" style="margin-left:15px">
       <tr>
         <td colspan="2">
           <a>Graduate Teaching Assistant: ME 4005 Mechanical Engineering Lab, Virginia Tech</a>. Summer 2023, Spring
